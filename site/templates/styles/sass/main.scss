@@ -1,6 +1,7 @@
 $green: #002116;
 $orange: #f28f76;
 $white: #fff;
+$yellow: #f7a300;
 
 body {
     background: $orange;
@@ -33,6 +34,11 @@ body {
     margin-left: -45px;
 }
 
+.TicketsOnSaleWrapper {
+    top: 20px;
+    right: -65px;
+}
+
 .TicketsOnSale {
     background: $green;
     color: $orange;
@@ -41,6 +47,14 @@ body {
 
 .Event {
     background-image: url("../../assets/files/event-bg.png");
+    max-width: 90vw;
+    height: 760px;
+    margin-bottom: 70px;
+}
+
+.Footer {
+    background: $yellow;
+    padding: 80px 200px;
 }
 
 h1 {
@@ -52,4 +66,16 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: $green;
+}
+
+h3 {
+    font-size: 5rem;
+    color: $white;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    span {
+        display: block;
+        width: 100%;
+        line-height: 5rem;
+    }
 }
