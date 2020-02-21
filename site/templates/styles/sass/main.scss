@@ -1,0 +1,55 @@
+$green: #002116;
+$orange: #f28f76;
+$white: #fff;
+
+body {
+    background: $orange;
+}
+
+// TODO: transfer styles out into tailwind
+.infotext {
+    width: 150px;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid $white;
+    height: auto;
+    color: $white;
+    span {
+        color: $green;
+        font-weight: bold;
+    }
+}
+
+.Slider {
+    z-index: -10;
+    &__text {
+        margin-top: -22.7rem;
+        line-height: 0.9;
+    }
+}
+
+.Text {
+    margin-top: 300px;
+    margin-left: -45px;
+}
+
+.TicketsOnSale {
+    background: $green;
+    color: $orange;
+    padding-top: 50px;
+}
+
+.Event {
+    background-image: url("../../assets/files/event-bg.png");
+}
+
+h1 {
+    font-size: 3rem;
+    color: $green;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $green;
+}

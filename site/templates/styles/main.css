@@ -1,0 +1,42 @@
+body {
+  background: #f28f76; }
+
+.infotext {
+  width: 150px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+  height: auto;
+  color: #fff; }
+  .infotext span {
+    color: #002116;
+    font-weight: bold; }
+
+.Slider {
+  z-index: -10; }
+  .Slider__text {
+    margin-top: -22.7rem;
+    line-height: 0.9; }
+
+.Text {
+  margin-top: 300px;
+  margin-left: -45px; }
+
+.TicketsOnSale {
+  background: #002116;
+  color: #f28f76;
+  padding-top: 50px; }
+
+.Event {
+  background-image: url("../../assets/files/event-bg.png"); }
+
+h1 {
+  font-size: 3rem;
+  color: #002116; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #002116; }
+
+/*# sourceMappingURL=main.css.map */
