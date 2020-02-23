@@ -19,9 +19,10 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    font-size: 62.5%; // TODO: Check this is the right val
+    font-size: 62.5%;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
         "Helvetica Neue", Arial, sans-serif;
+    list-style: none;
 }
 
 * * {
@@ -73,6 +74,11 @@ body {
     grid-template-columns: repeat(5, 1fr);
 }
 
+@mixin moveUp($offset) {
+    margin-top: $offset - ($offset * 2);
+    margin-bottom: $offset / 2;
+}
+
 .o-slider {
     grid-column: 2 / span 3;
     z-index: -1;
@@ -83,7 +89,7 @@ body {
         margin: 0 auto;
         font-size: 5rem;
         color: $white;
-        margin-top: -33rem;
+        @include moveUp(33rem);
         text-align: center;
         line-height: 5.3rem;
     }
@@ -92,9 +98,11 @@ body {
     }
 }
 
-.Text {
-    margin-top: 300px;
-    margin-left: -45px;
+.a-designText {
+    display: block;
+    color: white;
+    grid-column: 1 / span 3;
+    font-size: 3rem;
 }
 
 .TicketsOnSaleWrapper {
