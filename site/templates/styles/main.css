@@ -44,11 +44,25 @@ body {
 .m-nav {
   grid-column-start: 5; }
 
-.Slider {
-  z-index: -10; }
-  .Slider__text {
-    margin-top: -22.7rem;
-    line-height: 0.9; }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.o-slider {
+  grid-column: 2 / span 3;
+  z-index: -1;
+  margin-top: -70px; }
+  .o-slider__text {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 5rem;
+    color: #fff;
+    margin-top: -33rem;
+    text-align: center;
+    line-height: 5.3rem; }
+  .o-slider img {
+    width: 100%; }
 
 .Text {
   margin-top: 300px;

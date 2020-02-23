@@ -68,11 +68,27 @@ body {
     grid-column-start: 5;
 }
 
-.Slider {
-    z-index: -10;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.o-slider {
+    grid-column: 2 / span 3;
+    z-index: -1;
+    margin-top: -70px;
     &__text {
-        margin-top: -22.7rem;
-        line-height: 0.9;
+        display: block;
+        width: 25%;
+        margin: 0 auto;
+        font-size: 5rem;
+        color: $white;
+        margin-top: -33rem;
+        text-align: center;
+        line-height: 5.3rem;
+    }
+    img {
+        width: 100%;
     }
 }
 
