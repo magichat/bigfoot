@@ -1,9 +1,11 @@
-<div class="topBar grid grid-cols-6">
-    <img class="icon" src="<?= $config->urls->files ?>bigfoot-icon-with-text.png" alt="">
+<div class="o-topBar">
+    <img class="a-siteLogo" src="<?= $config->urls->files ?>bigfoot-icon-with-text.png" alt="">
 
-    <div class="infotext">
-        Ragley Hall Warwickshire. <span>Tickets on sale now.</span>
+    <div class="a-infomation">
+        <a href="#0">
+            Ragley Hall Warwickshire. <span>Tickets on sale now.</span>
+        </a>
     </div>
 
-    <div class="col-start-5">links on the end</div>
+    <div class="m-nav">links on the end</div>
 </div>

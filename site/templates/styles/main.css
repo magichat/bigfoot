@@ -1,16 +1,48 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
+
+* * {
+  font-size: inherit; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 body {
   background: #f28f76; }
 
-.infotext {
-  width: 150px;
-  margin-left: 10px;
-  padding-left: 15px;
-  border-left: 1px solid #fff;
+.o-topBar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+
+.a-siteLogo {
+  width: 90%;
   height: auto;
-  color: #fff; }
-  .infotext span {
+  justify-self: center;
+  padding: 15px 20px 10px 0;
+  border-right: 1px solid #fff; }
+
+.a-infomation {
+  width: 150px;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  color: #fff;
+  align-self: center; }
+  .a-infomation span {
     color: #002116;
     font-weight: bold; }
+
+.m-nav {
+  grid-column-start: 5; }
 
 .Slider {
   z-index: -10; }

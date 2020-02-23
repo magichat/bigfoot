@@ -1,24 +1,71 @@
+// ABEM
+// A-B__E -M
+
 $green: #002116;
 $orange: #f28f76;
 $white: #fff;
 $yellow: #f7a300;
 
+// === RESET ===
+
+// See https://css-tricks.com/box-sizing/ - Universal Box Sizing with Inheritance
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; // TODO: Check this is the right val
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+* * {
+    font-size: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+// === END OF RESET ===
+
 body {
     background: $orange;
 }
 
-// TODO: transfer styles out into tailwind
-.infotext {
-    width: 150px;
-    margin-left: 10px;
-    padding-left: 15px;
-    border-left: 1px solid $white;
+.o-topBar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.a-siteLogo {
+    width: 90%;
     height: auto;
+    justify-self: center;
+    padding: 15px 20px 10px 0;
+    border-right: 1px solid $white;
+}
+
+.a-infomation {
+    width: 150px;
+    font-size: 1.8rem;
+    margin-left: 10px;
     color: $white;
+    align-self: center;
     span {
         color: $green;
         font-weight: bold;
     }
+}
+
+.m-nav {
+    grid-column-start: 5;
 }
 
 .Slider {

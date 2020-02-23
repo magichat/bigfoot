@@ -1,4 +1,4 @@
-<footer class="w-screen h-50 Footer">
+<footer class="Footer">
     <h3>
         <span>Big on flavour.</span>
         <span>Big on sound.</span>
