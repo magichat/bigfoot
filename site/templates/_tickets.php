@@ -6,8 +6,8 @@
     </a>
 </div>
 
-<h1 class="">Lineup</h1>
-<div class="">
+<div class="o-events">
+    <h1>Lineup</h1>
     <section class="">
         <h2>Drinks.</h2>
         <ul>
@@ -41,7 +41,7 @@
             <li>Nort</li>
         </ul>
     </section>
-    <section class="">
+    <section class="o-events--goodStuff">
         <h2>Good Stuff.</h2>
         <ul>
             <li>Beavertown</li>
@@ -63,7 +63,7 @@
             <li>Nort</li>
         </ul>
     </section>
-    <section class="">
+    <section class="o-events--wellness">
         <h2>Wellness.</h2>
         <ul>
             <li>Beavertown</li>

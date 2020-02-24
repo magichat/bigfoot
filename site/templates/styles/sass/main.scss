@@ -112,6 +112,9 @@ body {
     height: 150px;
     border-radius: 50%;
     padding-top: 50px;
+    justify-self: end;
+    margin: 0 -30px -90px 0;
+    z-index: 100;
 
     &__stickerText {
         width: 100%;
@@ -123,11 +126,31 @@ body {
     }
 }
 
-.Event {
+.o-events {
     background-image: url("../../assets/files/event-bg.png");
-    max-width: 90vw;
-    height: 760px;
-    margin-bottom: 70px;
+    grid-row-start: 3;
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 20px;
+    gap: 15px;
+    margin-bottom: 60px;
+    &--goodStuff,
+    &--wellness {
+        grid-column-start: 2;
+    }
+    h1 {
+        grid-column: 1 / span 3;
+        text-align: center;
+    }
+    section {
+        font-size: 1.4rem;
+        text-align: center;
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
 }
 
 .Footer {
