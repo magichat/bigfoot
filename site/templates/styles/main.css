@@ -25,6 +25,23 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr); }
 
+.m-nav {
+  grid-column: 5 / span 2; }
+  .m-nav img {
+    margin: 0.5rem 10px 0 0;
+    padding-top: 0.5rem; }
+    .m-nav img:hover {
+      filter: brightness(0); }
+  .m-nav li {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold; }
+    .m-nav li:hover, .m-nav li--active {
+      background: #00682d; }
+
 .a-siteLogo {
   width: 90%;
   height: auto;
@@ -39,11 +56,8 @@ body {
   color: #fff;
   align-self: center; }
   .a-infomation span {
-    color: #002116;
+    color: #00682d;
     font-weight: bold; }
-
-.m-nav {
-  grid-column-start: 5; }
 
 .wrapper {
   display: grid;
@@ -76,7 +90,7 @@ body {
   user-select: none; }
 
 .o-sticker {
-  background: #002116;
+  background: #00682d;
   color: #f28f76;
   width: 150px;
   height: 150px;
@@ -137,12 +151,12 @@ body {
 
 h1 {
   font-size: 3rem;
-  color: #002116; }
+  color: #00682d; }
 
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #002116; }
+  color: #00682d; }
 
 h3 {
   font-size: 5rem;

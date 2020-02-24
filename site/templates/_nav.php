@@ -7,5 +7,20 @@
         </a>
     </div>
 
-    <div class="m-nav">links on the end</div>
+    <div class="m-nav">
+        <ul>
+            <a href="#0">
+                <li>Get Tickets</li>
+            </a>
+            <a href="#0">
+                <li>Discover</li>
+            </a>
+            <a href="#0">
+                <li>Info</li>
+            </a>
+            <img src="<?= $config->urls->files ?>insta.png" alt="Insta">
+            <img src="<?= $config->urls->files ?>twitter.png" alt="Twitter">
+            <img src="<?= $config->urls->files ?>facebook.png" alt="Facebook">
+        </ul>
+    </div>
 </div>

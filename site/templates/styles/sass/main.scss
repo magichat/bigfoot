@@ -5,6 +5,7 @@ $green: #002116;
 $orange: #f28f76;
 $white: #fff;
 $yellow: #f7a300;
+$green: #00682d;
 
 // === RESET ===
 
@@ -45,6 +46,29 @@ body {
     grid-template-columns: repeat(6, 1fr);
 }
 
+.m-nav {
+    grid-column: 5 / span 2;
+    img {
+        margin: 0.5rem 10px 0 0;
+        padding-top: 0.5rem;
+        &:hover {
+            filter: brightness(0);
+        }
+    }
+    li {
+        display: inline-block;
+        margin-right: 4px;
+        padding: 5px 10px;
+        font-size: 1.4rem;
+        color: $white;
+        font-weight: bold;
+        &:hover,
+        &--active {
+            background: $green;
+        }
+    }
+}
+
 .a-siteLogo {
     width: 90%;
     height: auto;
@@ -63,10 +87,6 @@ body {
         color: $green;
         font-weight: bold;
     }
-}
-
-.m-nav {
-    grid-column-start: 5;
 }
 
 .wrapper {
