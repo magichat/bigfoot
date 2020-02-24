@@ -1,172 +1,57 @@
-html {
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "        &: hover": expected "{", was ";"
+        on line 66 of main.scss
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  list-style: none; }
+61:         font-size: 2.5rem;
+62:         margin-right: 4px;
+63:         padding: 5px 10px;
+64:         color: $white;
+65:         font-weight: bold;
+66:         &: hover;
+67:     }
+68: }
+69: 
+70: .a-siteLogo {
+71:     width: 90%;
 
-* * {
-  font-size: inherit; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
-body {
-  background: #f28f76; }
-
-.o-topBar {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); }
-
-.m-nav {
-  grid-column: 4 / span 3; }
-  .m-nav img {
-    margin: 0.5rem 10px 0 0;
-    padding-top: 0.5rem; }
-    .m-nav img:hover {
-      filter: brightness(0);
-      cursor: pointer; }
-  .m-nav li {
-    display: inline-block;
-    font-size: 2.5rem;
-    margin-right: 4px;
-    padding: 5px 10px;
-    color: #fff;
-    font-weight: bold; }
-    .m-nav li:hover, .m-nav li--active {
-      background: #00682d; }
-
-.a-siteLogo {
-  width: 90%;
-  height: auto;
-  justify-self: center;
-  padding: 15px 20px 10px 0;
-  border-right: 1px solid #fff; }
-
-.a-infomation {
-  width: 150px;
-  font-size: 1.8rem;
-  margin-left: 10px;
-  color: #fff;
-  align-self: center; }
-  .a-infomation span {
-    color: #00682d;
-    font-weight: bold; }
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); }
-
-.o-slider {
-  grid-column: 2 / span 3;
-  z-index: -1;
-  margin-top: -70px; }
-  .o-slider__text {
-    display: block;
-    width: 25%;
-    margin: 0 auto;
-    font-size: 5rem;
-    color: #fff;
-    margin-top: -33rem;
-    margin-bottom: 16.5rem;
-    text-align: center;
-    line-height: 5.3rem; }
-  .o-slider img {
-    width: 100%; }
-
-.a-designText {
-  display: block;
-  color: white;
-  grid-column-end: span 5;
-  font-size: 3rem;
-  width: 100%;
-  overflow: hidden;
-  user-select: none; }
-
-.o-sticker {
-  background: #00682d;
-  color: #f28f76;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding-top: 50px;
-  grid-column-start: 5;
-  justify-self: start;
-  margin: 15px 0 0 -60px;
-  z-index: 100; }
-  .o-sticker__stickerText {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem; }
-    .o-sticker__stickerText span {
-      color: #fff; }
-
-.o-events {
-  background-image: url("../../assets/files/event-bg.png");
-  grid-row-start: 3;
-  grid-column: 2 / span 3;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  padding: 20px;
-  gap: 15px;
-  margin-bottom: 160px; }
-  .o-events--goodStuff, .o-events--wellness {
-    grid-column-start: 2; }
-  .o-events h1 {
-    grid-column: 1 / span 3;
-    text-align: center; }
-  .o-events section {
-    font-size: 1.4rem;
-    text-align: center; }
-    .o-events section h2 {
-      font-size: 1.7rem; }
-  .o-events::after {
-    content: "";
-    display: block;
-    width: 269px;
-    height: 192px;
-    position: relative;
-    top: 250px;
-    left: -700px;
-    background-image: url("../../assets/files/texture.png"); }
-
-.o-footer {
-  background: #f7a300;
-  background-image: url("../../assets/files/footer.png");
-  background-size: 300px;
-  height: 500px;
-  background-position-x: 55%;
-  background-position-y: 100px;
-  background-repeat: no-repeat;
-  padding: 80px 200px; }
-  .o-footer h3 {
-    margin-left: 150px; }
-
-h1 {
-  font-size: 3rem;
-  color: #00682d; }
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00682d; }
-
-h3 {
-  font-size: 5rem;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.2rem; }
-  h3 span {
-    display: block;
-    width: 100%;
-    line-height: 5rem; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+main.scss:66
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"        &: hover\": expected \"{\", was \";\"\A         on line 66 of main.scss\A \A 61:         font-size: 2.5rem;\A 62:         margin-right: 4px;\A 63:         padding: 5px 10px;\A 64:         color: $white;\A 65:         font-weight: bold;\A 66:         &: hover;\A 67:     }\A 68: }\A 69: \A 70: .a-siteLogo {\A 71:     width: 90%;"; }

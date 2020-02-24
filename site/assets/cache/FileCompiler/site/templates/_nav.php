@@ -9,7 +9,7 @@
 
     <div class="m-nav">
         <ul>
-            <a href="#0">
+            <a href="#0" class="active">
                 <li>Get Tickets</li>
             </a>
             <a href="#0">

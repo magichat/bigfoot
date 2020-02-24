@@ -63,10 +63,7 @@ body {
         padding: 5px 10px;
         color: $white;
         font-weight: bold;
-        &:hover,
-        &--active {
-            background: $green;
-        }
+        &: hover;
     }
 }
 
