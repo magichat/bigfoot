@@ -102,7 +102,7 @@ body {
   justify-items: center;
   padding: 20px;
   gap: 15px;
-  margin-bottom: 60px; }
+  margin-bottom: 160px; }
   .o-events--goodStuff, .o-events--wellness {
     grid-column-start: 2; }
   .o-events h1 {
@@ -113,6 +113,15 @@ body {
     text-align: center; }
     .o-events section h2 {
       font-size: 1.7rem; }
+  .o-events::after {
+    content: "";
+    display: block;
+    width: 269px;
+    height: 192px;
+    position: relative;
+    top: 250px;
+    left: -700px;
+    background-image: url("../../assets/files/texture.png"); }
 
 .o-footer {
   background: #f7a300;
