@@ -1,4 +1,4 @@
-<footer class="Footer">
+<footer class="o-footer">
     <h3>
         <span>Big on flavour.</span>
         <span>Big on sound.</span>
