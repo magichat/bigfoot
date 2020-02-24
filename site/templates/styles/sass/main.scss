@@ -105,15 +105,22 @@ body {
     font-size: 3rem;
 }
 
-.TicketsOnSaleWrapper {
-    top: 20px;
-    right: -65px;
-}
-
-.TicketsOnSale {
+.o-sticker {
     background: $green;
     color: $orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     padding-top: 50px;
+
+    &__stickerText {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        span {
+            color: $white;
+        }
+    }
 }
 
 .Event {

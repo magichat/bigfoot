@@ -72,14 +72,19 @@ body {
   grid-column: 1 / span 3;
   font-size: 3rem; }
 
-.TicketsOnSaleWrapper {
-  top: 20px;
-  right: -65px; }
-
-.TicketsOnSale {
+.o-sticker {
   background: #002116;
   color: #f28f76;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   padding-top: 50px; }
+  .o-sticker__stickerText {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem; }
+    .o-sticker__stickerText span {
+      color: #fff; }
 
 .Event {
   background-image: url("../../assets/files/event-bg.png");
